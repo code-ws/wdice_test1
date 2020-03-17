@@ -19,7 +19,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'],function () use ($router){
-    $router->get('/upgrade/check','Base\UpgradeController@check');
+    $router->get('/uaaapgrade/check','Base\UpgradeController@check');
 });
 
 $router->get('/connect',"Base\SupportController@connect");
